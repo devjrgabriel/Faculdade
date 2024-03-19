@@ -134,6 +134,7 @@
     .cardconteudo {
         display: grid;
         grid-template-rows: repeat(5, 1fr);
+        
 
     }
 
@@ -143,8 +144,8 @@
         display: grid;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
-        color: #428080;
-        text-shadow: 0.03em 0.03em 0.1em #6eb0b0;
+        color: white;
+        text-shadow: 0 0 0.1em #6eb0b0;
         align-items: center;
     }
 
@@ -153,7 +154,6 @@
         grid-row: 1;
         background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
         border-radius: 100px 20px 100px 20px;
-        box-shadow: 0px 0px 1.1rem #01ffe1;
 
        
         font-size: 1.1rem;
@@ -174,7 +174,6 @@
     }
 
     .conteudocentral>img {
-        box-shadow: 0px 0px 1.1rem #01ffe1d9;
         filter: grayscale(100%);
         width: 20em;
         height: 17em;
@@ -183,7 +182,7 @@
         filter: grayscale(0%);
         transform: scale(1.002);
         transition: all 0.8s ease;
-        box-shadow: 0px 0px 1.8rem #01ffe1;
+        box-shadow: 0px 0px 1.8rem #0375cc;
         
     }
 
@@ -203,7 +202,6 @@
         align-items: center;
         background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
         border-radius: 100px 100px 100px 100px;
-        box-shadow: 0 0 0.5em #8ad9d9;
         border: #1d999900;
         min-width: 10em;
         min-height: 3rem;
@@ -214,7 +212,7 @@
     .foottercard>.botaocard:hover {
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
-        box-shadow: 0px 0px 1.1rem #01ffe1;
+        box-shadow: 0px 0px 1.1rem #0373c9;
 
 
     }
