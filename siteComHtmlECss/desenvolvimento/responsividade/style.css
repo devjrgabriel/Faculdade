@@ -7,8 +7,9 @@
 }
 
 body,
-html {
+html,#home {
   height: 100%;
+  overflow-x: hidden;
   width: 100%;
   background-color: #d7fafa;
 
@@ -26,4 +27,8 @@ ul,
 p {
   font-family: "anta";
   text-decoration: none;
+}
+
+#bmw-red{
+  background: #e12a26;
 }

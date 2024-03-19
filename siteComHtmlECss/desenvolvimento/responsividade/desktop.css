@@ -137,9 +137,9 @@
 
     }
 
-    #introducaocont,
-    #conteudocentral,
-    #foottercard {
+    .introducaocont,
+    .conteudocentral,
+    .foottercard {
         display: grid;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
@@ -149,7 +149,7 @@
     }
 
 
-    #introducaocont {
+    .introducaocont {
         grid-row: 1;
         background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
         border-radius: 100px 20px 100px 20px;
@@ -163,7 +163,7 @@
 
     }
 
-    #conteudocentral {
+    .conteudocentral {
         grid-row: 2 / -2;
         font-size: 0.8rem;
         display: grid;
@@ -173,13 +173,13 @@
         gap: 2rem;
     }
 
-    #conteudocentral>img {
+    .conteudocentral>img {
         box-shadow: 0px 0px 1.1rem #01ffe1d9;
         filter: grayscale(100%);
         width: 20em;
         height: 17em;
     }
-    #conteudocentral>img:hover {
+    .conteudocentral>img:hover {
         filter: grayscale(0%);
         transform: scale(1.002);
         transition: all 0.8s ease;
@@ -187,18 +187,18 @@
         
     }
 
-    #conteudocentral>p {
+    .conteudocentral>p {
         margin-right: -3rem;
     }
 
-    #foottercard {
+    .foottercard {
 
         grid-row: -2 / -1;
         
 
     }
 
-    #foottercard>.botaocard {
+    .foottercard>.botaocard {
         display: grid;
         align-items: center;
         background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
@@ -211,7 +211,7 @@
         
     }
 
-    #foottercard>.botaocard:hover {
+    .foottercard>.botaocard:hover {
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 0px 1.1rem #01ffe1;
