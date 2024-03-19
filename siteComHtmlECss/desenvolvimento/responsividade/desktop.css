@@ -13,7 +13,6 @@
     html {
         height: 100%;
         width: 100%;
-        background-color: #d7fafa;
 
     }
 
@@ -120,7 +119,6 @@
     article {
         border-radius: 1.5%;
         gap: 1.5rem;
-        background-color: #31f2f254;
         height: 22rem;
 
     }
@@ -144,15 +142,12 @@
         display: grid;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
-        color: white;
-        text-shadow: 0 0 0.1em #6eb0b0;
         align-items: center;
     }
 
 
     .introducaocont {
         grid-row: 1;
-        background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
         border-radius: 100px 20px 100px 20px;
 
        
@@ -180,7 +175,6 @@
     .conteudocentral>img:hover {
         transform: scale(1.002);
         transition: all 0.8s ease;
-        box-shadow: 0px 0px 1.8rem #0375cc;
         
     }
 
@@ -198,7 +192,6 @@
     .foottercard>.botaocard {
         display: grid;
         align-items: center;
-        background: linear-gradient(-90deg, #c6fdfd 55%, #a3ffff 100%);
         border-radius: 100px 100px 100px 100px;
         border: #1d999900;
         min-width: 10em;
@@ -210,15 +203,12 @@
     .foottercard>.botaocard:hover {
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
-        box-shadow: 0px 0px 1.1rem #0373c9;
 
 
     }
 
     #botaotext {
         margin: 0 auto;
-        color: #428080;
-        text-shadow: 0.03em 0.03em 0.1em #6eb0b0;
     }
 
     #botaotext:hover {
@@ -251,7 +241,6 @@
 
     footer {
         margin-top: 5%;
-        background-color: #2abbbb7a;
         grid-column: 1/-1;
         grid-row: -2 / -1;
         bottom: 0;

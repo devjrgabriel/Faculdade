@@ -12,7 +12,7 @@ html,
   height: 100%;
   overflow-x: hidden;
   width: 100%;
-  background-color: #d7fafa;
+  color: #fff;
 
 }
 
@@ -31,15 +31,15 @@ p {
 }
 
 #bmw-red {
-  background: #e12a26;
+  background: #5a020e;
 }
 
 #bmw-blue {
-  background: #0065b1;
+  background: linear-gradient(90deg, #5b9fd3 0%, #005494 100%);
 }
 
 #bmw-dark-blue {
-  background: #1d3f75;
+  background: #0b0b15;
 }
 
 #porsche-yellow {
@@ -47,9 +47,34 @@ p {
 }
 
 #porsche-red {
-  background: #cb2e32
+  background: linear-gradient(90deg, #eb6f74 0%, #cb2e32 100%);
 }
 
 #porsche-black {
   background: #14110a
+}
+#kawasaki-verde{
+  background: linear-gradient(90deg, #8de67f 0%, #1bb304 100%);
+}
+#kawasaki-black{
+  background: #000;
+}
+.kawasaki-verde-escuro{
+  background: #044404;
+}
+.ferrari-amarelo{
+  background: #fff200;
+}
+.ferrari-verde{
+  background: #0d8922;
+}
+.ferrari-vermelho{
+  background:linear-gradient(90deg, #e26569 0%, #ed1c24 100%);
+
+}
+.text-black{
+  color: #000;
+}
+.text-white{
+  color: #ffffff;
 }
