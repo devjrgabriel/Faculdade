@@ -1,0 +1,103 @@
+<div class="container-page">
+
+        <main>
+            <!--bmw-->
+            <article class="cardconteudo ">
+                <div class="introducaocont">
+                    <p>Bayerische Motoren Werke </p>
+                </div>
+                <div class="conteudocentral">
+                    <img src="./imagens/bmw.png" alt="">
+                    <p>Bayerische Motoren Werke AG é uma empresa alemã, fabricante de automóveis e motocicletas, sediada
+                        em Munique, Baviera. A peculiaridade da empresa é que ela segue uma estratégia de marca premium
+                        puro: desenvolve, fabrica e comercializa seus produtos sob as marcas Mini, Rolls-Royce Motor
+                        Cars e BMW.</p>
+                </div>
+                <div class="foottercard">
+                    <a class="botaocard">
+                        <p href="#">saiba mais</p>
+                    </a>
+                </div>
+            </article>
+            <!--porsche-->
+            <article class="cardconteudo">
+                <div class="introducaocont">
+                    <p>Porsche
+                    </p>
+                </div>
+                <div class="conteudocentral">
+                    <img src="./imagens/porsche.png" alt="">
+                    <p>Em 1899 Porsche vai para as fábricas Lohner, na época o maior fabricante de carruagens da
+                        Áustria. Ali ele projeta o primeiro automóvel híbrido que funciona e o primeiro veículo com
+                        tração integral do mundo. Em 1906, Porsche deixa a Lohner e vai como projetista chefe para a
+                        Austro-Daimler em Wiener Neustadt.</p>
+                </div>
+                <div class="foottercard">
+                    <a class="botaocard" id="porsche-black">
+                        <p href="#">saiba mais</p>
+                    </a>
+                </div>
+            </article>
+            <!--Kawasaki-->
+            <article class="cardconteudo">
+                <div class="introducaocont" id="kawasaki-black">
+                    <p>Kawasaki</p>
+                </div>
+                <div class="conteudocentral">
+                    <img src="./imagens/kawasaki.png" alt="">
+                    <p>A Kawasaki é uma corporação multinacional com mais de cinquenta subsidiárias (fábricas, centros
+                        de distribuição e sedes de marketing e vendas) na maioria das grandes cidades do mundo. Além
+                        disso, a Kawasaki está fazendo o possível para cumprir suas responsabilidades com o planeta,
+                        sendo consciente do meio ambiente. </p>
+                </div>
+                <div class="foottercard ">
+                    <a class="botaocard kawasaki-verde-escuro">
+
+                        <p href="#">saiba mais</p>
+
+                    </a>
+                </div>
+            </article>
+            <!--Ferrari-->
+            <article class="cardconteudo">
+                <div class="introducaocont ferrari-verde">
+                    <p>Ferrari</p>
+                </div>
+                <div class="conteudocentral">
+                    <img src="./imagens/ferrari.png" alt="">
+                    <p>Ferrari é uma fabricante italiana de carros esportivos de luxo com sede em
+                        Maranello. Fundada por Enzo Ferrari em 1939 na divisão de corridas da Alfa Romeo com o nome Auto
+                        Avio Costruzioni, a empresa construiu seu primeiro carro em 1940</p>
+                </div>
+                <div class="foottercard ">
+                    <a class="botaocard ferrari-amarelo">
+                        <p href="#">saiba mais</p>
+
+                    </a>
+                </div>
+            </article>
+            <article class="cardconteudo">
+                <div class="introducaocont">
+                    <p>What is Lorem Ipsum?</p>
+                </div>
+                <div class="conteudocentral">
+                    <img src="https://source.unsplash.com/800x600/?h2r" alt="">
+                    <p>A Kawasaki é uma corporação multinacional com mais de cinquenta subsidiárias (fábricas, centros
+                        de distribuição e sedes de marketing e vendas) na maioria das grandes cidades do mundo. Além
+                        disso, a Kawasaki está fazendo o possível para cumprir suas responsabilidades com o planeta,
+                        sendo consciente do meio ambiente. </p>
+                </div>
+                <div class="foottercard">
+                    <a class="botaocard">
+
+                        <p href="#">saiba mais</p>
+
+                    </a>
+                </div>
+            </article>
+
+
+        </main>
+
+        <footer></footer>
+    </div>

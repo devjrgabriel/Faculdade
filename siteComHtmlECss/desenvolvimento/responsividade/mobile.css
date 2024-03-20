@@ -10,31 +10,6 @@
     display: grid;
   }
 
-  /*ABAIXO NAVBAR DE CIMA */
-  header {
-    grid-row: 1;
-    background: #059f9fc1;
-    opacity: 92%;
-    list-style: none;
-    height: 3rem;
-  }
-
-  .nav_topo {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .navlista {
-    display: none;
-  }
-
-  .logo {
-    color: white;
-    margin-left: 1rem;
-    font-size: 1rem;
-  }
-
-  /* ACIMA NAVBAR SUPERIOR */
 
   .container-page>main {
     grid-auto-rows: auto;

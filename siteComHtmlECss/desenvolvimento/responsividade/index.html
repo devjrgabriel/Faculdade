@@ -7,134 +7,73 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
 
-    <link rel="stylesheet" href="tablet.css">
-    <link rel="stylesheet" href="notebook.css">
     <link rel="stylesheet" href="desktop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container-page">
-        <header>
-            <div class="nav_topo">
-                <a href="" class="logo">LOBBY</a>
-                <ul class="navlista">
-                    <li><a class="linavsup" href="/site/desenvolvimento/home/index.html">HOME</a></li>
-                    <li><a class="linavsup" href="#">MOTOS</a></li>
-                    <li><a class="linavsup" href="#">CARROS</a></li>
-                    <li><a class="linavsup" href="/site/desenvolvimento/areadocliente/index.html">AREA DO CLIENTE</a>
-                    </li>
-                </ul>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container text-white">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./recursos/imagens/spotify.svg" width="142" alt="">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div id="nav-principal" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item ">
+                            <a href="" class="nav-link text-white"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class=" nav-link text-white"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white">AREA DO CLIENTE</a>
+                        </li>
+                        <li class="nav-item divisor"> </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white">Inscrever-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
-
-        <main>
-            <!--bmw-->
-            <article class="cardconteudo ">
-                <div class="introducaocont">
-                    <p>Bayerische Motoren Werke </p>
-                </div>
-                <div class="conteudocentral">
-                    <img src="./imagens/bmw.png" alt="">
-                    <p>Bayerische Motoren Werke AG é uma empresa alemã, fabricante de automóveis e motocicletas, sediada
-                        em Munique, Baviera. A peculiaridade da empresa é que ela segue uma estratégia de marca premium
-                        puro: desenvolve, fabrica e comercializa seus produtos sob as marcas Mini, Rolls-Royce Motor
-                        Cars e BMW.</p>
-                </div>
-                <div class="foottercard">
-                    <a class="botaocard">
-                        <p href="#">saiba mais</p>
-                    </a>
-                </div>
-            </article>
-            <!--porsche-->
-            <article class="cardconteudo">
-                <div class="introducaocont">
-                    <p>Porsche
-                    </p>
-                </div>
-                <div class="conteudocentral">
-                    <img src="./imagens/porsche.png" alt="">
-                    <p>Em 1899 Porsche vai para as fábricas Lohner, na época o maior fabricante de carruagens da
-                        Áustria. Ali ele projeta o primeiro automóvel híbrido que funciona e o primeiro veículo com
-                        tração integral do mundo. Em 1906, Porsche deixa a Lohner e vai como projetista chefe para a
-                        Austro-Daimler em Wiener Neustadt.</p>
-                </div>
-                <div class="foottercard">
-                    <a class="botaocard" id="porsche-black">
-                        <p href="#">saiba mais</p>
-                    </a>
-                </div>
-            </article>
-            <!--Kawasaki-->
-            <article class="cardconteudo">
-                <div class="introducaocont" id="kawasaki-black">
-                    <p>Kawasaki</p>
-                </div>
-                <div class="conteudocentral">
-                    <img src="./imagens/kawasaki.png" alt="">
-                    <p>A Kawasaki é uma corporação multinacional com mais de cinquenta subsidiárias (fábricas, centros
-                        de distribuição e sedes de marketing e vendas) na maioria das grandes cidades do mundo. Além
-                        disso, a Kawasaki está fazendo o possível para cumprir suas responsabilidades com o planeta,
-                        sendo consciente do meio ambiente. </p>
-                </div>
-                <div class="foottercard ">
-                    <a class="botaocard kawasaki-verde-escuro">
-
-                        <p href="#">saiba mais</p>
-
-                    </a>
-                </div>
-            </article>
-            <!--Ferrari-->
-            <article class="cardconteudo">
-                <div class="introducaocont ferrari-verde">
-                    <p>Ferrari</p>
-                </div>
-                <div class="conteudocentral">
-                    <img src="./imagens/ferrari.png" alt="">
-                    <p>Ferrari é uma fabricante italiana de carros esportivos de luxo com sede em
-                        Maranello. Fundada por Enzo Ferrari em 1939 na divisão de corridas da Alfa Romeo com o nome Auto
-                        Avio Costruzioni, a empresa construiu seu primeiro carro em 1940</p>
-                </div>
-                <div class="foottercard ">
-                    <a class="botaocard ferrari-amarelo">
-                        <p href="#">saiba mais</p>
-
-                    </a>
-                </div>
-            </article>
-            <article class="cardconteudo">
-                <div class="introducaocont">
-                    <p>What is Lorem Ipsum?</p>
-                </div>
-                <div class="conteudocentral">
-                    <img src="https://source.unsplash.com/800x600/?h2r" alt="">
-                    <p>A Kawasaki é uma corporação multinacional com mais de cinquenta subsidiárias (fábricas, centros
-                        de distribuição e sedes de marketing e vendas) na maioria das grandes cidades do mundo. Além
-                        disso, a Kawasaki está fazendo o possível para cumprir suas responsabilidades com o planeta,
-                        sendo consciente do meio ambiente. </p>
-                </div>
-                <div class="foottercard">
-                    <a class="botaocard">
-
-                        <p href="#">saiba mais</p>
-
-                    </a>
-                </div>
-            </article>
-
-
-        </main>
-
-        <footer></footer>
-    </div>
-    <script src="./mobile-navbar.js"></script>
+        </nav>
+    </header>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
