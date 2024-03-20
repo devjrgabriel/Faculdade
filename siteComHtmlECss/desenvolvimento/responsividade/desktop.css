@@ -89,7 +89,7 @@
     .navlista a {
         font-size: 1.1rem;
         color: #b9b9b9;
-        
+
     }
 
     .linavsup:hover {
@@ -121,6 +121,8 @@
         gap: 1.5rem;
         height: 22rem;
 
+        background: linear-gradient(90deg, #b6b5b5 0%, #000000 100%);
+        
     }
 
     article:hover {
@@ -132,7 +134,7 @@
     .cardconteudo {
         display: grid;
         grid-template-rows: repeat(5, 1fr);
-        
+
 
     }
 
@@ -149,8 +151,8 @@
     .introducaocont {
         grid-row: 1;
         border-radius: 100px 20px 100px 20px;
+        background: black;
 
-       
         font-size: 1.1rem;
         width: 20rem;
         height: 3rem;
@@ -172,10 +174,11 @@
         width: 20em;
         height: 17em;
     }
+
     .conteudocentral>img:hover {
         transform: scale(1.002);
         transition: all 0.8s ease;
-        
+
     }
 
     .conteudocentral>p {
@@ -185,7 +188,7 @@
     .foottercard {
 
         grid-row: -2 / -1;
-        
+
 
     }
 
@@ -197,7 +200,8 @@
         min-width: 10em;
         min-height: 3rem;
         margin: 0 auto;
-        
+        background: #000000;
+
     }
 
     .foottercard>.botaocard:hover {
@@ -227,13 +231,15 @@
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
     }
-    .carrosel{
+
+    .carrosel {
         width: 100%;
         height: 45em;
         margin: 0 auto;
     }
-    .imagemcarrosel{
-        background:url(https://source.unsplash.com/1425x720/?churrasco);
+
+    .imagemcarrosel {
+
         width: 90%;
         height: 45em;
         box-shadow: 0 0 10px #1d9999;
