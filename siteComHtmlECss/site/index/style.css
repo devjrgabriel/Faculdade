@@ -22,8 +22,9 @@ body {
 a,
 li,
 ul,
-p {
-    font-family: "anta";
+p,
+h3 {
+    font-family: imprima;
     text-decoration: none;
     color: #fff;
 }
@@ -158,6 +159,10 @@ footer ul li {
         margin-top: 5em;
     }
 
+    #height-image {
+        height: 40em;
+    }
+
     .contcarrosel {
         margin: 0 auto;
         width: 85%;
@@ -167,16 +172,40 @@ footer ul li {
     #section-cards {
         width: 100%;
         padding: 2em;
-        
 
+
+    }
+
+    .card {
+        box-shadow: 0 0 0.2em #989898;
+    }
+
+    .card:hover {
+        transform: scale(1.04);
+        transition: all 0.6s;
     }
 
     #row-cards {
         padding: 3em;
     }
-    .img-card{
+
+    .img-card {
         padding: 0.5em;
         border-radius: 1em;
+        max-height: 11em;
+    }
+
+    .btn-cards {
+        background-color: #ffffff;
+        margin-left: 25%;
+        box-shadow: 0 0 0.3em #cacaca;
+    }
+
+    .btn-cards:hover {
+        background-color: #000;
+        color: white;
+        transform: scale(1.02);
+        transition: all 0.6s;
     }
 
 }
