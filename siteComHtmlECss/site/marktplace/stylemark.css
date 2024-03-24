@@ -125,7 +125,7 @@ nav.navbar-transparente {
 -----------------------------*/
 .card-decoration {
     border: none;
-    background: linear-gradient(60deg, #181818a7, #000000c5)
+    background: linear-gradient(180deg, #ffffffd8, #861818,#861818,#000000,#000000d8)
 }
 
 
@@ -194,7 +194,8 @@ footer ul li {
     .img-card {
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 15em;
+        min-height: 18em;
+
     }
 
     .btn-cards {
@@ -268,11 +269,13 @@ footer ul li {
     #row-cards {
         padding: 1em;
     }
-
+    .card-body{
+        margin-left: 1rem;
+    }
     .img-card {
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 15em;
+        max-height: 17rem;
     }
 
     .btn-cards {
