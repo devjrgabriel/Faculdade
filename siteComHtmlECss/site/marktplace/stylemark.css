@@ -1,0 +1,293 @@
+/* Layout
+-----------------------------*/
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imprima-regular {
+    font-family: "Imprima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+a,
+li,
+ul,
+p,
+h3 {
+    font-family: "Imprima";
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+
+body {
+    background-attachment: fixed;
+    background: linear-gradient(204deg, #ffffff, #858885);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
+}
+
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: #000000e1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #c0c0c0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transition: all 0.6s;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+.ativo {
+    color: #fff;
+}
+
+/* cards
+-----------------------------*/
+.card-decoration {
+    border: none;
+    background: linear-gradient(60deg, #181818a7, #000000c5)
+}
+
+
+/* Rodapé
+-----------------------------*/
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.2em;
+        margin-left: 1em;
+        letter-spacing: 0.2em;
+    }
+
+
+
+
+
+
+    .card {
+        box-shadow: 0 0 0.2em #989898;
+        margin-top: 5%;
+    }
+
+
+    #row-cards {
+        padding: 1em;
+    }
+
+    .img-card {
+        padding: 0.5em;
+        border-radius: 1em;
+        max-height: 15em;
+    }
+
+    .btn-cards {
+        background-color: #ffffff;
+        margin-left: 25%;
+        box-shadow: 0 0 0.3em #00000084;
+        margin-left: 35%;
+
+    }
+
+    .btn-cards:hover {
+        background-color: #000;
+        color: white;
+        transform: scale(1.02);
+        transition: all 0.6s;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.2em;
+        margin-left: 1em;
+        letter-spacing: 0.2em;
+    }
+
+    .cards-section {
+        margin-top: 5rem;
+    }
+
+    #section-cards {
+        width: 100%;
+    }
+
+    .card {
+        box-shadow: 0 0 0.2em #989898;
+    }
+
+    .card:hover {
+        transform: scale(1.04);
+        transition: all 0.6s;
+    }
+
+    #row-cards {
+        padding: 1em;
+    }
+
+    .img-card {
+        padding: 0.5em;
+        border-radius: 1em;
+        max-height: 15em;
+    }
+
+    .btn-cards {
+        background-color: #ffffff;
+        margin-left: 25%;
+        box-shadow: 0 0 0.3em #cacaca;
+        margin-left: 35%;
+
+    }
+
+    .btn-cards:hover {
+        background-color: #000;
+        color: white;
+        transform: scale(1.02);
+        transition: all 0.6s;
+    }
+
+}

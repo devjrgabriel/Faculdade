@@ -18,13 +18,19 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.imprima-regular {
+    font-family: "Imprima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 a,
 li,
 ul,
 p,
 h3 {
-    font-family: imprima;
+    font-family: "Imprima";
     text-decoration: none;
     color: #fff;
 }
@@ -47,19 +53,45 @@ body {
 
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
 }
+
 @keyframes AnimationName {
-    0%{background-position:77% 0%}
-    50%{background-position:24% 100%}
-    100%{background-position:77% 0%}
+    0% {
+        background-position: 77% 0%
+    }
+
+    50% {
+        background-position: 24% 100%
+    }
+
+    100% {
+        background-position: 77% 0%
+    }
 }
 
 
@@ -134,9 +166,60 @@ footer ul li {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    .btn-custom {
-        margin: 10px 15px;
-        font-size: 1em;
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.2em;
+        margin-left: 1em;
+        letter-spacing: 0.2em;
+    }
+
+    #home {
+        margin-top: 4em;
+    }
+
+
+
+    .contcarrosel {
+        margin: 0 auto;
+        width: 100%;
+        box-shadow: 0 0 1em #505050;
+    }
+
+    .carousel-item img {
+        height: 20em;
+    }
+
+   
+
+    .card {
+        box-shadow: 0 0 0.2em #989898;
+        margin-top: 5%;
+    }
+
+  
+    #row-cards {
+        padding: 1em;
+    }
+
+    .img-card {
+        padding: 0.5em;
+        border-radius: 1em;
+        max-height: 15em;
+    }
+
+    .btn-cards {
+        background-color: #ffffff;
+        margin-left: 25%;
+        box-shadow: 0 0 0.3em #00000084;
+        margin-left: 35%;
+
+    }
+
+    .btn-cards:hover {
+        background-color: #000;
+        color: white;
+        transform: scale(1.02);
+        transition: all 0.6s;
     }
 }
 
