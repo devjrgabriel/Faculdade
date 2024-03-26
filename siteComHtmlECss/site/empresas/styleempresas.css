@@ -1,8 +1,3 @@
-/*
-* 
-* @author Jamilton Damasceno
-*/
-
 /* Layout
 -----------------------------*/
 html,
@@ -18,12 +13,13 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 .imprima-regular {
     font-family: "Imprima", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 a,
 li,
@@ -42,15 +38,11 @@ h3 {
 
 body {
     background-attachment: fixed;
-    background: linear-gradient(50deg, #6b0000, #000000,#6b0000, #000000);
-    background-size: 300% 300%;
-
+    background: linear-gradient(204deg, #ffffff, #ececec);
+    background-size: 400% 400%;
     -webkit-animation: AnimationName 18s ease infinite;
     -moz-animation: AnimationName 18s ease infinite;
     animation: AnimationName 18s ease infinite;
-}
-.imagem-carousel{
-    height: 90vh;
 }
 
 
@@ -129,6 +121,13 @@ nav.navbar-transparente {
     color: #fff;
 }
 
+/* cards
+-----------------------------*/
+.card-decoration {
+    border: none;
+    background: linear-gradient(180deg, #83e093, #18862a,#18862a,#06200a,#06200a)
+}
+
 
 /* Rodapé
 -----------------------------*/
@@ -167,6 +166,7 @@ footer ul li {
 
 
 
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
@@ -176,30 +176,17 @@ footer ul li {
         letter-spacing: 0.2em;
     }
 
-    #home {
-        margin-top: 4em;
-    }
 
 
 
-    .contcarrosel {
-        margin: 0 auto;
-        width: 100%;
-        box-shadow: 0 0 1em #505050;
-    }
 
-    .carousel-item img {
-        height: 20em;
-    }
-
-   
 
     .card {
         box-shadow: 0 0 0.2em #989898;
         margin-top: 5%;
     }
 
-  
+
     #row-cards {
         padding: 1em;
     }
@@ -207,7 +194,8 @@ footer ul li {
     .img-card {
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 15em;
+        min-height: 18em;
+
     }
 
     .btn-cards {
@@ -254,9 +242,6 @@ footer ul li {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    h1 {
-        font-size: 6em;
-    }
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.2em;
@@ -264,29 +249,18 @@ footer ul li {
         letter-spacing: 0.2em;
     }
 
-    #home {
-        margin-top: 5em;
-    }
-
-    #height-image {
-        height: 40em;
-    }
-
-    .contcarrosel {
-        margin: 0 auto;
-        width: 95vw;
-        box-shadow: 0 0 1em #0f0f0f;
+    .cards-section {
+        margin-top: 5rem;
     }
 
     #section-cards {
         width: 100%;
-        padding: 2em;
-
-
     }
 
     .card {
         box-shadow: 0 0 0.2em #989898;
+        width: 23vw;
+
     }
 
     .card:hover {
@@ -295,13 +269,15 @@ footer ul li {
     }
 
     #row-cards {
-        padding: 3em;
+        padding: 1em;
     }
-
+    .card-body{
+        margin-left: 1rem;
+    }
     .img-card {
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 15em;
+        max-height: 17rem;
     }
 
     .btn-cards {

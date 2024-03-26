@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./styleempresas.css">
     <title>Deluxe</title>
     <link rel="icon" href="./recursos/imagens/favicon.png">
 
@@ -33,26 +33,25 @@
                 <div id="nav-principal" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item ">
-                            <a href="./index.html" class="nav-link ">
-                                <div class="ativo">Home</div>
+                            <a href="/index/index.html" class="nav-link ">
+                                <div class="">Home</div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/siteComHtmlECss/site/marktplace/index.html" class="nav-link">Empresas</a>
+                            <a href="/marktplace/index.html" class="nav-link">
+                                <div class="ativo">Carros</div>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/siteComHtmlECss/site/marktplace/index.html" class="nav-link">Start-up</a>
+                            <a href="" class="nav-link">Motos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/siteComHtmlECss/site/marktplace/index.html" class="nav-link">Inovações</a>
+                            <a href="" class="nav-link">Area do cliente</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/marktplace/index.html" class="nav-link">Veiculos</a>
-                        </li>
-
-                        
                         <li class="nav-item divisor"> </li>
-    
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Inscrever-se</a>
+                        </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Entrar</a>
                         </li>
@@ -62,108 +61,103 @@
         </nav>
     </header>
     <!--carrousel-->
-    <section id="home" class="d-flex">
-        <div class=" contcarrosel align-self-center ">
-            <div class=" row ">
-                <div class="col-md-12 capa teste">
-                    <div id="carousel-spotify" class="carousel slide " data-ride="carousel">
-                        <div class="carousel-inner ">
-                            <!--slide 01-->
-                            <div class="carousel-item active ">
-                                <img src=" imagens/bmw.png" class="d-block w-100 imagem-carousel" alt="...">
-                            </div>
-                            <!--slide 02-->
-                            <div class="carousel-item">
-                                <img src="imagens/porsche.png" class="d-block w-100 imagem-carousel" alt="...">
-                            </div>
 
-                        </div>
-                        <!--controles-->
-                        <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
-                            <i class="fas fa-angle-left fa-3x"></i>
-                        </a>
-                        <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
-                            <i class="fas fa-angle-right fa-3x"></i>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
 
     <!--cards-->
-    <section>
+    <section class="cards-section">
 
         <div id="section-cards ">
-            <div class="row " id="row-cards">
+            <div class="d-flex flex-row  mb-2  justify-content-start flex-wrap" id="row-cards">
 
-                <div class="card01 col-md-3">
-                    <div class="card  " style="background: linear-gradient(90deg,#330404, #8d0707)">
-                        <img class="card-img-top img-card" src="imagens/ferrari.png" alt="Card image cap">
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/h1tec.jpg" alt="Card image cap">
                         <div class="card-body ">
-                            <h3 class="card-title text-white">Ferrari</h3>
-                            <p class="card-text ">Some quick example text to build on the card title and make
-                                up
-                                the
-                                bulk of the card's content.</p>
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
                             <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
                         </div>
 
                     </div>
 
                 </div>
-
-                <div class="card02 col-md-3">
-                    <div class="card " style="background: linear-gradient(50deg,  #073f0e, #0a9b1b)">
-                        <img class="card-img-top img-card" src="imagens/kawasaki.png" alt="Card image cap">
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/santa-maria.png" alt="Card image cap">
                         <div class="card-body ">
-                            <h3 class="card-title">Kawasaki</h3>
-                            <p class="card-text ">Some quick example text to build on the card title and
-                                make
-                                up
-                                the
-                                bulk of the card's content.</p>
-                            <a href="/kawasaki/kawaki.html" class="btn btn-cards text-black">Saiba
-                                Mais</a>
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
+                            <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
                         </div>
 
                     </div>
+
                 </div>
-                <div class="card03 col-md-3">
-                    <div class="card  " style="background: linear-gradient(50deg, #bb9b09, #ac8e0a)">
-                        <img class="card-img-top img-card" src="imagens/porsche.png" alt="Card image cap">
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/Logo_Sebrae.png" alt="Card image cap">
                         <div class="card-body ">
-                            <h3 class="card-title">Porsche</h3>
-                            <p class="card-text">Some quick example text to build on the card title and
-                                make
-                                up
-                                the
-                                bulk of the card's content.</p>
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
+                            <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/3c+.png" alt="Card image cap">
+                        <div class="card-body ">
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
                             <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="card03 col-md-3">
-                    <div class="card " style="background: linear-gradient(50deg, #120786, #1907dd)">
-                        <img class="card-img-top img-card" src="imagens/bmw.png" alt="Card image cap">
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/AGRARIA.jpg" alt="Card image cap">
                         <div class="card-body ">
-                            <h3 class="card-title">BMW</h3>
-                            <p class="card-text ">Some quick example text to build on the card title and
-                                make
-                                up
-                                the
-                                bulk of the card's content.</p>
-                            <a href="#" class="btn btn-cards text-black ">Saiba Mais</a>
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
+                            <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
                         </div>
 
                     </div>
                 </div>
-            </div>
 
-        </div>
+                <div class="card01 p-2 bd-highlight">
+                    <div class="card card-decoration">
+                        <img class="card-img-top img-card" src="imagens/acttecnologia_logo.jpeg" alt="Card image cap">
+                        <div class="card-body ">
+                            <h3 class="card-title text-white">Pagani Huayra</h3>
+                            <ul>
+                                <li style="list-style: none;"><b>Valor: </b>R$91.999.999,99</li>
+                                <li style="list-style: none;"><b>Dono: </b>Horacio Pagani</li>
+                            </ul>
+                            <a href="#" class="btn btn-cards text-black">Saiba Mais</a>
+                        </div>
+
+                    </div>
+                </div>
     </section>
 
 
