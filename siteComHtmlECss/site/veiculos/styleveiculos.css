@@ -120,12 +120,34 @@ nav.navbar-transparente {
 .ativo {
     color: #fff;
 }
-
+/* navbar
+-----------------------------*/
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+    margin-left: 1em;
+    letter-spacing: 0.2em;
+}
 /* cards
 -----------------------------*/
 .card-decoration {
     border: none;
-    background: linear-gradient(180deg, #8eda62e1, #62a13de1,#62a13de1,#62a13de1,#356b15e1)
+    background: linear-gradient(180deg, #8eda62e1, #62a13de1,#62a13de1,#62a13de1,#356b15e1);
+    box-shadow: 0 0 10px #242424;
+
+}
+.botao-flex-cards{
+    justify-content: center;
+}
+.img-card {
+    object-fit: cover;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.btn-cards {
+    background-color: #0f640c;
+    box-shadow: 0 0 0.3em #00000075;
+    color: white;
+
 }
 
 
@@ -170,72 +192,62 @@ footer ul li {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 1.2em;
-        margin-left: 1em;
-        letter-spacing: 0.2em;
-    }
-
-
-
-
-
-
-    .card {
-        box-shadow: 0 0 0.2em #989898;
-        margin-top: 5%;
-    }
-
-
-    #row-cards {
-        padding: 1em;
-    }
-
-    .img-card {
-        padding: 0.5em;
+     .card {
+        margin-top: 8vh;
+        max-width: 45vw;
         border-radius: 1em;
-        min-height: 18em;
-
+        font-size: 0.8rem;
+    }
+    
+    .img-card {
+        height: 25vh;
     }
 
-    .btn-cards {
-        background-color: #ffffff;
-        margin-left: 25%;
-        box-shadow: 0 0 0.3em #00000084;
-        margin-left: 35%;
+    
 
-    }
-
-    .btn-cards:hover {
-        background-color: #000;
-        color: white;
-        transform: scale(1.02);
-        transition: all 0.6s;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    h1 {
-        font-size: 3em;
+    .card {
+        margin-top: 8vh;
+        width: 45vw;
+        border-radius: 1em;
+    }
+    
+    .img-card {
+        height: 35vh;
     }
 
-    .btn-custom {
-        margin: 10px 15px;
-    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    h1 {
-        font-size: 4em;
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.8em;
+        margin-left: 1em;
+    }
+    .card {
+        margin-top: 8vh;
+        width: 45vw;
+        border-radius: 1em;
+    }
+    
+    .img-card {
+        height: 35vh;
     }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    h1 {
-        font-size: 5em;
+    .card {
+        margin-top: 8vh;
+        width: 31vw;
+        border-radius: 1em;
+    }
+    
+    .img-card {
+        height: 35vh;
     }
 
 }
@@ -243,11 +255,7 @@ footer ul li {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 1.2em;
-        margin-left: 1em;
-        letter-spacing: 0.2em;
-    }
+  
 
     .cards-section {
         margin-top: 5rem;
@@ -258,7 +266,8 @@ footer ul li {
     }
 
     .card {
-        box-shadow: 0 0 0.2em #989898;
+        width: 23vw;
+
     }
 
     .card:hover {
@@ -266,29 +275,17 @@ footer ul li {
         transition: all 0.6s;
     }
 
-    #row-cards {
-        padding: 1em;
-    }
-    .card-body{
-        margin-left: 1rem;
-    }
+   
     .img-card {
-        padding: 0.5em;
-        border-radius: 1em;
-        max-height: 17rem;
+        height: 30vh;
     }
+    
 
-    .btn-cards {
-        background-color: #ffffff;
-        margin-left: 25%;
-        box-shadow: 0 0 0.3em #cacaca;
-        margin-left: 35%;
-
-    }
-
+ 
     .btn-cards:hover {
-        background-color: #000;
+        background: #357e0be1;
         color: white;
+        box-shadow: 0 0 10px #225f10b0;
         transform: scale(1.02);
         transition: all 0.6s;
     }

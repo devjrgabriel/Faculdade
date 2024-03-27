@@ -23,6 +23,7 @@
     letter-spacing: 0.1em;
 }
 
+
 /* Layout
 -----------------------------*/
 html,
@@ -32,7 +33,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.imprima-regular {
+    font-family: "Imprima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .anta-regular {
     font-family: "Anta", sans-serif;
     font-weight: 400;
@@ -44,7 +49,7 @@ li,
 ul,
 p,
 h3 {
-    font-family: imprima;
+    font-family: "Imprima";
     text-decoration: none;
     color: #fff;
 }
@@ -56,7 +61,7 @@ h3 {
 
 body {
     background-attachment: fixed;
-    background: linear-gradient(204deg, #bfebae, #bfebae);
+    background: linear-gradient(204deg, #365828, #365828);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 18s ease infinite;
@@ -409,8 +414,8 @@ footer ul li {
 
     .contcarrosel {
         margin: 0 auto;
-        width: 100%;
-        box-shadow: 0 0 1em #505050;
+        width: 98vw;
+        box-shadow: 0 0 1em #202020be;
     }
 
     .row-conteudo {
