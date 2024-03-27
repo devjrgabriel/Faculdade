@@ -38,7 +38,7 @@ h3 {
 
 body {
     background-attachment: fixed;
-    background: linear-gradient(204deg, #ffffff, #ececec);
+    background: linear-gradient(204deg, #bfebae, #bfebae);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 18s ease infinite;
     -moz-animation: AnimationName 18s ease infinite;
@@ -94,7 +94,7 @@ body {
 -----------------------------*/
 nav.navbar-transparente {
     padding: 15px 0px;
-    background: #000000e1;
+    background: #307507e1;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -125,7 +125,7 @@ nav.navbar-transparente {
 -----------------------------*/
 .card-decoration {
     border: none;
-    background: linear-gradient(180deg, #83e093, #18862a,#18862a,#06200a,#06200a)
+    background: linear-gradient(180deg, #8eda62e1, #62a13de1,#62a13de1,#62a13de1,#356b15e1)
 }
 
 
@@ -187,12 +187,9 @@ footer ul li {
     }
 
 
-    #row-cards {
-        padding: 1em;
-    }
+   
 
     .img-card {
-        padding: 0.5em;
         border-radius: 1em;
         min-height: 18em;
 
@@ -200,9 +197,7 @@ footer ul li {
 
     .btn-cards {
         background-color: #ffffff;
-        margin-left: 25%;
         box-shadow: 0 0 0.3em #00000084;
-        margin-left: 35%;
 
     }
 
@@ -258,8 +253,8 @@ footer ul li {
     }
 
     .card {
-        box-shadow: 0 0 0.2em #989898;
-        width: 23vw;
+        box-shadow: 0 0 10px #727171;
+        width: 18vw;
 
     }
 
@@ -268,29 +263,31 @@ footer ul li {
         transition: all 0.6s;
     }
 
-    #row-cards {
-        padding: 1em;
-    }
     .card-body{
-        margin-left: 1rem;
+        margin-left: 0rem;
+        align-items: center;
     }
     .img-card {
+        object-fit: cover;
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 17rem;
+        height: 30vh;
+    }
+    .botao-flex-cards{
+        justify-content: center;
     }
 
     .btn-cards {
-        background-color: #ffffff;
-        margin-left: 25%;
-        box-shadow: 0 0 0.3em #cacaca;
-        margin-left: 35%;
+        width: 40%;
+        padding: 0px;
+        color: white;
 
     }
 
     .btn-cards:hover {
-        background-color: #000;
+        background: #357e0be1;
         color: white;
+        box-shadow: 0 0 10px #4ac525b0;
         transform: scale(1.02);
         transition: all 0.6s;
     }
