@@ -53,6 +53,7 @@ body {
 
 .imagem-carousel {
     height: 90vh;
+    object-fit: cover;
 }
 
 
@@ -310,7 +311,8 @@ footer ul li {
     .img-card {
         padding: 0.5em;
         border-radius: 1em;
-        max-height: 15em;
+        height: 35vh;
+        filter: drop-shadow(0 0 10px #16161665);
     }
 
     .btn-cards {
