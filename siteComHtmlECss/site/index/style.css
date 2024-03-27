@@ -18,12 +18,13 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 .imprima-regular {
     font-family: "Imprima", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 a,
 li,
@@ -42,14 +43,15 @@ h3 {
 
 body {
     background-attachment: fixed;
-    background: linear-gradient(50deg, #6b0000, #000000,#6b0000, #000000);
+    background: linear-gradient(204deg, #bfebae, #bfebae);
     background-size: 300% 300%;
 
     -webkit-animation: AnimationName 18s ease infinite;
     -moz-animation: AnimationName 18s ease infinite;
     animation: AnimationName 18s ease infinite;
 }
-.imagem-carousel{
+
+.imagem-carousel {
     height: 90vh;
 }
 
@@ -102,7 +104,7 @@ body {
 -----------------------------*/
 nav.navbar-transparente {
     padding: 15px 0px;
-    background: #000000e1;
+    background: #307507e1;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -128,6 +130,13 @@ nav.navbar-transparente {
 .ativo {
     color: #fff;
 }
+
+
+.card-decoration {
+    border: none;
+    background: linear-gradient(180deg, #8eda62e1, #62a13de1,#62a13de1,#62a13de1,#356b15e1)
+}
+
 
 
 /* Rodapé
@@ -192,14 +201,14 @@ footer ul li {
         height: 20em;
     }
 
-   
+
 
     .card {
         box-shadow: 0 0 0.2em #989898;
         margin-top: 5%;
     }
 
-  
+
     #row-cards {
         padding: 1em;
     }
