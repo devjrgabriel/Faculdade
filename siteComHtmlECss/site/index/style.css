@@ -1,9 +1,9 @@
-
-*{
+* {
     font-family: "Imprima";
     text-decoration: none;
     color: #fff;
 }
+
 html,
 body {
     height: 100%;
@@ -102,6 +102,17 @@ nav.navbar-transparente {
     color: #fff;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+    margin-left: 1em;
+    letter-spacing: 0.2em;
+}
+
+
+.contcarrosel {
+    width: 100%;
+}
+
 /* cards
 -----------------------------*/
 
@@ -178,7 +189,7 @@ footer ul li {
     }
 
     .carousel-item img {
-        height: 30vh;
+        height: 50vh;
         object-fit: fill;
     }
 
@@ -205,12 +216,12 @@ footer ul li {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-        #home {
+    #home {
         margin-top: 7vh;
     }
 
     .carousel-item img {
-        height: 35vh;
+        height: 70vh;
         object-fit: fill;
     }
 
@@ -237,12 +248,18 @@ footer ul li {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9em;
+        margin-left: 1em;
+        letter-spacing: 0.1em;
+    }
+
     #home {
         margin-top: 8vh;
     }
 
     .carousel-item img {
-        height: 60vh;
+        height: 90vh;
         object-fit: fill;
     }
 
@@ -274,7 +291,7 @@ footer ul li {
     }
 
     .carousel-item img {
-        height: 60vh;
+        height: 88vh;
         object-fit: fill;
     }
 
@@ -306,8 +323,11 @@ footer ul li {
         margin-top: 8vh;
     }
 
+
+
     .carousel-item img {
         height: 92vh;
+        width: 100px;
         object-fit: fill;
     }
 
