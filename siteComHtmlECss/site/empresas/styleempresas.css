@@ -147,7 +147,15 @@ nav.navbar-transparente {
     background-color: #0f640c;
     box-shadow: 0 0 0.3em #00000075;
     color: white;
+    font-size: 1em;
 
+}
+.card-title {
+    font-size: 1.4em;
+}
+
+.cards-desc {
+    font-size: 0.8rem;
 }
 
 
@@ -194,7 +202,7 @@ footer ul li {
 
      .card {
         margin-top: 8vh;
-        max-width: 45vw;
+        max-width: 42vw;
         border-radius: 1em;
         font-size: 0.8rem;
     }
@@ -229,12 +237,13 @@ footer ul li {
     }
     .card {
         margin-top: 8vh;
-        width: 45vw;
+        width: 28vw;
+        margin-left: 2vw;
         border-radius: 1em;
     }
     
     .img-card {
-        height: 35vh;
+        height: 25vh;
     }
 }
 
@@ -242,12 +251,14 @@ footer ul li {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .card {
         margin-top: 8vh;
-        width: 31vw;
+        margin-left: 2vw;
+
+        width: 28vw;
         border-radius: 1em;
     }
     
     .img-card {
-        height: 35vh;
+        height: 25vh;
     }
 
 }
