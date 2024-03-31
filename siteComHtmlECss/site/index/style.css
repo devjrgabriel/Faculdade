@@ -185,11 +185,11 @@ footer ul li {
     }
 
     #home {
-        margin-top: 8vh;
+        margin-top: 11vh;
     }
 
     .carousel-item img {
-        height: 50vh;
+        height: 60vh;
         object-fit: fill;
     }
 
