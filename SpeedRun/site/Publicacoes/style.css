@@ -116,47 +116,22 @@ nav.navbar-transparente {
 /* cards
 -----------------------------*/
 
-
+.navbar-lateral{
+    margin-top: 11vh;
+    width: 100vh;
+    background-color: rgb(37, 70, 11);
+}
 .card-publicacao{
-    margin-top: 12vh;
-    width: 40vw;
-    align-items: center;
+    margin-top: 14vh;
+    width: 60vw;
     height: 80vh;
-    background-color: #25460b;
+    background-color: rgb(37, 70, 11);
     border-radius: 2em;
-    box-shadow: 0 0 10px #376117;
 }
 .card-title{
-    width: 100%;
+    width: 60%;
     margin-top: 2rem;
     text-align: center;
-}
-#title{
-    color: #f3f3f3;
-    text-shadow: 0 0 4px #73f113;
-
-
-}
-.card-conteudo{
-    margin-left: 25%;
-}
-.input-login{
-    margin: 0 auto;
-    margin-top: 4rem;
-    width: 80%;
-    height:3rem;
-    border-radius: 10px;
-}
-#email{
-    background: #bfebae;
-    border: 1px solid #49a840;
-    box-shadow: 0 0 10px #84c255be;
-}
-#password{
-    background: #bfebae;
-    border: 1px solid #49a840;
-
-    box-shadow: 0 0 10px #84c255be;
 }
 
 
