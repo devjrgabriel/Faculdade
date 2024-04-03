@@ -189,22 +189,22 @@ footer ul li {
     }
 
     .carousel-item img {
-        height: 60vh;
+        height: 40vh;
         object-fit: fill;
     }
 
     .card {
         margin-top: 5%;
-        min-height: 45vh;
-        width: 45vw;
+        min-height: 30vh;
+        width: 43vw;
     }
 
     .card-title {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     .cards-desc {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
