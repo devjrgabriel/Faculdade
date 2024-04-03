@@ -1,16 +1,13 @@
 Informações Importantes!!!
 
-font-family: "Trebuchet MS", Helvetica, sans-serif.
+
 
 - Utilizar a propriedade float para a barra de navegação.
 - Será necessário configurar o layout em três colunas (utilizar o modelo caixa).
 - Em algumas classes/ids deverão ser utilizados o display block.
 
 
-#container {
-width: 750px;
-margin: 0 auto;
-}
+
 
 label {
 display: block;
