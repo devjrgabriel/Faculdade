@@ -7,9 +7,10 @@
 html,
 body {
     height: 100%;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    
+    background:  #bfebae;
 }
 
 .imprima-regular {
@@ -18,64 +19,12 @@ body {
     font-style: normal;
 }
 
-body {
-    background-attachment: fixed;
-    background: linear-gradient(204deg, #bfebae, #bfebae);
-    background-size: 300% 300%;
-
-    -webkit-animation: AnimationName 18s ease infinite;
-    -moz-animation: AnimationName 18s ease infinite;
-    animation: AnimationName 18s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0% {
-        background-position: 77% 0%
-    }
-
-    50% {
-        background-position: 24% 100%
-    }
-
-    100% {
-        background-position: 77% 0%
-    }
-}
-
-@-moz-keyframes AnimationName {
-    0% {
-        background-position: 77% 0%
-    }
-
-    50% {
-        background-position: 24% 100%
-    }
-
-    100% {
-        background-position: 77% 0%
-    }
-}
-
-@keyframes AnimationName {
-    0% {
-        background-position: 77% 0%
-    }
-
-    50% {
-        background-position: 24% 100%
-    }
-
-    100% {
-        background-position: 77% 0%
-    }
-}
-
-
 /* Barra de navegação
 -----------------------------*/
 nav.navbar-transparente {
     padding: 15px 0px;
     background: #307507e1;
+    height: 7vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -85,16 +34,19 @@ nav.navbar-transparente {
 .navbar-light .navbar-nav .nav-link:hover {
     transition: all 0.6s;
     color: #ffffff;
+    
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(255, 255, 255, .5);
+    color: #ffffff80;
     border-color: rgba(255, 255, 255, 0.5);
+    border: none;
+
 }
 
 .divisor {
     width: 1px;
-    background: white;
+    background: #ffffff80;
     margin: 12px 15px;
 }
 
@@ -108,247 +60,26 @@ nav.navbar-transparente {
     letter-spacing: 0.2em;
 }
 
-
-.contcarrosel {
-    width: 100%;
+.containerBody{
+    margin-top: 8vh;
 }
 
-/* cards
------------------------------*/
-
-.card-decoration {
-
-    box-shadow: 0 0 0.2em #989898;
-    border: none;
-    background: linear-gradient(180deg, #8eda62e1, #62a13de1, #62a13de1, #62a13de1, #356b15e1)
-}
-
-.botao-flex-cards {
-    justify-content: center;
-}
-
-.img-card {
-    object-fit: cover;
-    padding: 0.5em;
-    border-radius: 1em;
-}
-
-.btn-cards {
-    background-color: #0f640c;
-    box-shadow: 0 0 0.3em #00000075;
-    color: white;
-
-}
-
-
-/* Rodapé
------------------------------*/
-footer {
-    background: #307507e1;
-    padding: 50px 0px 20px 0px;
-    position: relative;
-}
-
-footer h4 {
-    color: #919496;
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-
-footer .navbar-nav a {
-    color: #ffffff;
-    font-size: 0.8em;
-}
-
-footer .navbar-nav a:hover {
-    color: #9bf0e1;
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    float: right;
-    margin: 0 5px;
+.imagem-carousel{
+    width: 90vw;
 }
 
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 1.2em;
-        margin-left: 1em;
-        letter-spacing: 0.2em;
-    }
-
-    #home {
-        margin-top: 11vh;
-    }
-
-    .carousel-item img {
-        height: 40vh;
-        object-fit: fill;
-    }
-
-    .card {
-        margin-top: 5%;
-        min-height: 30vh;
-        width: 43vw;
-    }
-
-    .card-title {
-        font-size: 1.1em;
-    }
-
-    .cards-desc {
-        font-size: 0.9rem;
-    }
-
-
-    .img-card {
-        object-fit: cover;
-        height: 25vh;
-    }
-}
+@media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    #home {
-        margin-top: 7vh;
-    }
-
-    .carousel-item img {
-        height: 70vh;
-        object-fit: fill;
-    }
-
-    .card {
-        margin-top: 5%;
-        min-height: 40vh;
-        width: 45vw;
-    }
-
-    .card-title {
-        font-size: 1.4em;
-    }
-
-    .cards-desc {
-        font-size: 1rem;
-    }
-
-
-    .img-card {
-        object-fit: cover;
-        height: 25vh;
-    }
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 0.9em;
-        margin-left: 1em;
-        letter-spacing: 0.1em;
-    }
-
-    #home {
-        margin-top: 8vh;
-    }
-
-    .carousel-item img {
-        height: 90vh;
-        object-fit: fill;
-    }
-
-    .card {
-        margin-top: 5%;
-        min-height: 40vh;
-        width: 30vw;
-    }
-
-    .card-title {
-        font-size: 1.4em;
-    }
-
-    .cards-desc {
-        font-size: 1rem;
-    }
-
-
-    .img-card {
-        object-fit: cover;
-        height: 25vh;
-    }
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    #home {
-        margin-top: 8vh;
-    }
-
-    .carousel-item img {
-        height: 88vh;
-        object-fit: fill;
-    }
-
-    .card {
-        margin-top: 5%;
-        min-height: 40vh;
-        width: 30vw;
-    }
-
-    .card-title {
-        font-size: 1.4em;
-    }
-
-    .cards-desc {
-        font-size: 1rem;
-    }
-
-
-    .img-card {
-        object-fit: cover;
-        height: 25vh;
-    }
-
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-    #home {
-        margin-top: 8vh;
-    }
-
-
-
-    .carousel-item img {
-        height: 92vh;
-        width: 100px;
-        object-fit: fill;
-    }
-
-    .card {
-        margin-top: 5%;
-        min-height: 40vh;
-        width: 22vw;
-    }
-
-    .card-title {
-        font-size: 1.4em;
-    }
-
-    .cards-desc {
-        font-size: 1rem;
-    }
-
-
-    .img-card {
-        object-fit: cover;
-        height: 25vh;
-    }
-
-}
+@media (min-width: 1200px) {}
