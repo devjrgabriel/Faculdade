@@ -24,7 +24,7 @@ body {
 nav.navbar-transparente {
     padding: 15px 0px;
     background: #307507e1;
-    height: 7vh;
+    height: 10vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -61,11 +61,40 @@ nav.navbar-transparente {
 }
 
 .containerBody{
-    margin-top: 8vh;
+    margin-top: 11vh;
 }
 
 .imagem-carousel{
     width: 90vw;
+}
+
+/* cards
+-----------------------------*/
+.card-decoration {
+    width: 22vw;
+    border: none;
+    background: linear-gradient(180deg, #8eda62e1, #62a13de1,#62a13de1,#62a13de1,#356b15e1);
+    box-shadow: 0 0 10px #242424;
+
+}
+.img-card {
+    object-fit: cover;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+.btn-cards {
+    background-color: #0f640c;
+    box-shadow: 0 0 0.3em #00000075;
+    color: white;
+    font-size: 1em;
+
+}
+.card-title {
+    font-size: 1.4em;
+}
+
+.cards-desc {
+    font-size: 0.8rem;
 }
 
 
