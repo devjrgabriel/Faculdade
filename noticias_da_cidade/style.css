@@ -45,13 +45,13 @@ body{
 }
 .containerPrincipal{
     width: 100vw;
-    max-height:250vh ;
+    height:110vh ;
     
 }
 .navbarLateral{
     width: 20vw;
     margin-right: 5vw;
-    height: 760vh;
+    height: 60vh;
     margin-top: 2vh;
 
 }
@@ -63,7 +63,7 @@ body{
 .news{
     background:url(Image/fundo-caixa.png);
     width: 18vw;
-    height: 10vh;
+    height: 23vh;
     margin-top: 3vh;
 
 }
@@ -84,24 +84,24 @@ body{
 
 .conteudoPrincipal{ 
     width: 65vw;
-    max-height: 170vh;}
+    height: 100vh;}
 
 .cardConteudo{
     background:url(Image/fundo-caixa.png);
     width: 24vw;
-    height: 40vh;
+    height: 45vh;
     margin-top: 2vh;
     margin-left: 2vw;
     }
 .tituloCard{
     background-color: #294c71;
     width: 22vw;
-    height: 4vh;
+    height: 6vh;
 }
 .conteudoCard{
     background-color: #fff;
     width: 22vw;
-    max-height: 33vh;
+    height: 36vh;
 }
 .footerNoticias{
     width: 100vw;
