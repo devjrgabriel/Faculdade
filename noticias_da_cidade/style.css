@@ -89,7 +89,7 @@ body{
 .cardConteudo{
     background:url(Image/fundo-caixa.png);
     width: 24vw;
-    height: 45vh;
+    min-height: 45vh;
     margin-top: 2vh;
     margin-left: 2vw;
     }
@@ -101,7 +101,7 @@ body{
 .conteudoCard{
     background-color: #fff;
     width: 22vw;
-    height: 36vh;
+    min-height: 36vh;
 }
 .footerNoticias{
     width: 100vw;
