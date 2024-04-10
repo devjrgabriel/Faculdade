@@ -16,82 +16,31 @@
 
 .topo-azul {
     background: url(Image/fundo.png);
-    width: 100vw;
-    height: 37vh;
-    position: relative;
+    height: 23vh;
 }
 
-#container {
-    width: 750px;
-    margin: 0 auto;
-}
-
-#active {
-    background-color: #e50040;
-}
-
-#divisor {
-    width: 10px;
-    color: white;
-}
-
-#nav-divisor>a {
-    color: #92052d;
-    font-size: 1rem;
-
-}
-
-.nav-decoration {
-    background-color: #b10333;
-    width: 60vw;
-    justify-content: center;
-    position: absolute;
-    margin-top: -8vw;
-}
-
-.nav-item {
-    color: white;
-    font-size: 1rem;
+#logo{
+    width: 8vw;
     height: 7vh;
-    width: 100%;
-    text-align: center;
+}
+#mapa{
+    width: 10vw;
+    height: 12vh;
 }
 
-.imagem-nav {
-    margin-top: -17.5vw;
+.navbar-nav{
+    width: 40vw;
+    height: 5vh;
+    background-color: #b10333 ;
 }
-
-.container-conteudo {
-    margin-top: 4vw;
-
-
+.navbarLateral{
+    background:url(Image/fundo-caixa.png);
+    width: 30%;
+    height: 60vh;
 }
+.conteudoCentral{
+    background:url(Image/fundo-caixa.png);
+    width: 65%;
+    height: 100vh;
 
-#entrevistas {
-    background: url(Image/fundo-caixa.png);
-    align-items: center;
-}
-
-.titulo-card-entrevistas {
-    font-size: 1.3rem;
-    padding-left: 10px;
-    background-color: #294c71;
-    height: 6vh;
-    margin-top: 1%;
-}
-
-.conteudo-card-entrevista {
-    background-color: #fff;
-}
-
-.conteudo-card-entrevista>p {
-    color: #000;
-    font-size: 1.1rem;
-    padding: 5px;
-}
-
-.card-conteudo {
-    background: url(Image/fundo-caixa.png);
-    width: 30vw;
-    height: 65vh;
 }
