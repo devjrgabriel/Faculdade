@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    color: #fff;
+    font-size: 1rem;
 
 }
 .colors{
@@ -49,7 +51,7 @@ body{
 .navbarLateral{
     width: 20vw;
     margin-right: 5vw;
-    min-height: 70vh;
+    height: 760vh;
     margin-top: 2vh;
 
 }
@@ -99,7 +101,7 @@ body{
 .conteudoCard{
     background-color: #fff;
     width: 22vw;
-    height: 33vh;
+    max-height: 33vh;
 }
 .footerNoticias{
     width: 100vw;
