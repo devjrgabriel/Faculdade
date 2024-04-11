@@ -24,7 +24,7 @@ body{
 .navbartopo{
     background:url(Image/fundo.png);
     width: 100vw;
-    height: 23vh;
+    height: 35vh;
 }
 .navLogo{
     width: 50vw;
@@ -50,7 +50,6 @@ body{
 }
 .navbarLateral{
     width: 20vw;
-    margin-right: 5vw;
     height: 60vh;
     margin-top: 2vh;
 
@@ -71,7 +70,7 @@ body{
     background-color: #294c71;
     margin-top: 1vh;
     width: 16vw;
-    height: 4vh;
+    height: 7vh;
 }
 .conteudoNavLateral{
     background-color: #ffffff;
@@ -84,30 +83,41 @@ body{
 
 .conteudoPrincipal{ 
     width: 65vw;
-    height: 100vh;}
+    margin-bottom: 10px;
+}
 
 .cardConteudo{
     background:url(Image/fundo-caixa.png);
-    width: 24vw;
+    width: 29vw;
     min-height: 45vh;
-    padding: 1vw;
+    padding: 0.5vw;
     margin-top: 2vh;
-    margin-left: 2vw;
     }
 .tituloCard{
     background-color: #294c71;
-    width: 22vw;
+    width: 27vw;
     height: 6vh;
 }
 .conteudoCard{
     background-color: #fff;
-    
-    width: 22vw;
+    width: 27vw;
+}
+.mundoconteudo{
+    width: 27vw;
+    height: 100px;
+}
+.imgmundo{
+    padding: 1vh;
+    width: 8vw;
+    height: 12vh;
+}
+.textoConteudo{
+    height: 12vh;
 }
 .footerNoticias{
     width: 100vw;
     height: 10vh;
     background-color: #294c71;
-    margin-top: 2vh;
+    margin-top: 35vh;
 
 }
