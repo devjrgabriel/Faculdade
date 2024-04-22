@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="meuformulario">
+        <input type="number" name=""  placeholder="Digite um numero..." id="numero1">
+        <button type="submit">Calcular</button>
+    </form>
+    <script>
+        let verificacao;
+        const formulario = document.getElementById('meuformulario');
+        formulario.addEventListener('submit',function (evento) {
+            evento.preventDefault();
+
+            let numero = document.getElementById('numero1').value;
+            if (numero === '') {
+        
+                alert('Numero esta vazio');
+                return false;
+            }
+            numero = numero*2;
+            alert(numero);
+
+            
+        })
+    </script>
+</body>
+
+</html>
