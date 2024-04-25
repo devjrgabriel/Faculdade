@@ -87,8 +87,7 @@
             nem "b", exiba "Outra letra".</h3>
 
         <form id="meuformulario" class="d-flex flex-column align-items-center " style=" width: 70%;">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero1">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero2">
+            <input class="campoNumero" type="text" name="" placeholder="Digite um numero..." id="variavel">
             <button class="botaoenviar" type="submit">Calcular</button>
         </form>
     </section>
@@ -96,30 +95,25 @@
         let verificacao;
         const formulario = document.getElementById('meuformulario');
         formulario.addEventListener('submit', function (evento) {
+            evento.preventDefault();
 
-            a = 'Frase01'
-            b = 'Frase02'
+            let a = 'Frase01'
+            let b = 'Frase02'
 
-            variavel == getelementbyid(variavel).value;
+            let variavel = document.getElementById('variavel').value;
 
-            if (variavel == 'a' || variavel == 'A')
-                if (variavel == 'b' || variavel == 'B')
-                    if (variavel == '')
-else (escolheu outra variavel)
-
-
-        evento.preventDefault();
-
-        let numero1 = document.getElementById('numero1').value;
-        let numero2 = document.getElementById('numero2').value;
-
-        if (numero1 == numero2) {
-            alert('os numeros são iguais')
-        } else if (numero1 > numero2) {
-            alert('Primeiro numero é maior');
-        } else {
-            alert('Segundo numero é maior');
-        }
+            if (variavel == 'a' || variavel == 'A') {
+                alert(a);
+            }
+            else if (variavel == 'b' || variavel == 'B') {
+                alert(b);
+            }
+            else if (variavel == '') {
+                alert('O campo esta vazio...');
+            }
+            else {
+                alert('escolheu outra variavel');
+            }
         })
     </script>
 
