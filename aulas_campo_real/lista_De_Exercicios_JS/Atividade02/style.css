@@ -51,3 +51,6 @@
     background-color: #6f7e68;
     transition: all 0.6s;
 }
+alert{
+    background-color: red;
+}

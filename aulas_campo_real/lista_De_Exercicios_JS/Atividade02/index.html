@@ -26,12 +26,12 @@
                 style="list-style: none; width: 100%; height: 8vh;">
                 <li class="nav-item">
                     <a href="../Atividade01/index.html" class="nav-link ">
-                        <div class="linkAtivo">Atividade 01</div>
+                        <div class="link">Atividade 01</div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="../Atividade02/index.html" class="nav-link ">
-                        <div class="link">Atividade 02</div>
+                        <div class="linkAtivo">Atividade 02</div>
                     </a>
                 </li>
 
@@ -98,8 +98,10 @@
 
             let numero1 = document.getElementById('numero1').value;
             let numero2 = document.getElementById('numero2').value;
-
-            if (numero1 == numero2){
+            if(numero1==''||numero2==''){
+                alert('Tem numero vazio ai!!')
+            }
+            else if (numero1 == numero2){
                 alert('os numeros são iguais')
             }else if (numero1 > numero2) {
                 alert('Primeiro numero é maior');

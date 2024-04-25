@@ -98,8 +98,9 @@
 
             let numero1 = document.getElementById('numero1').value;
             let numero2 = document.getElementById('numero2').value;
-
-            if (numero1 == numero2){
+            if (numero1 == '' || numero2 =='') {
+                alert('Tem numero vazio ai!!')
+            }else if (numero1 == numero2){
                 alert('os numeros são iguais')
             }else if (numero1 > numero2) {
                 alert('Primeiro numero é maior');
