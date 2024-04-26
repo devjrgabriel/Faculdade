@@ -86,29 +86,14 @@
 
         <form id="meuformulario" class="d-flex flex-column align-items-center " style=" width: 70%;">
             <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numeros">
-            <button class="botaoenviar" onclick="adicionaraovetor()">Adicionar</button>
-            <button class="botaoenviar" onclick="encontrarMaiorNumero()">Maior Numero</button>
+            <button class="botaoenviar" type="submit">Maior Numero</button>
         </form>
     </section>
 
     <script>
-        let vetor = [];
-        const maiorNumero = encontrarMaiorNumero(numeros);
-
-        function adicionaraovetor() {
-            evento.preventDefault();
-
-            let numeros = document.getElementById('numeros').value;
-            if (numeros.trim() !== '') {
-                vetor.push(numeros);
-                alert('Vetor atual: ' + vetor);
-                document.getElementById('numeros').value = '';
-            } else {
-                alert('Insira um numero');
-            }
-        }
-
-        function encontrarMaiorNumero(vetor) {
+        let vetor = [1, 5, 16, 9];
+        const formulario = document.getElementById('meuformulario');
+        formulario.addEventListener('submit', function (evento) {
             evento.preventDefault();
             let maiorNumero = vetor[0];
 
@@ -117,29 +102,12 @@
                     maiorNumero = vetor[i];
                 }
             }
-            alert( 'o maior')
+            alert('o maior : ' + maiorNumero)
             return maiorNumero;
-        }
-        const formulario = document.getElementById('meuformulario');
-        formulario.addEventListener('submit', function (evento) {
-            evento.preventDefault();
 
-            let radioSelecionado = document.querySelector('input[name="option"]:checked');
-            if (radioSelecionado) {
-                let valueRadio = radioSelecionado.value;
-                if (valueRadio === '1') {
-                    alert('Opção 1 escolhida');
-                } else if (valueRadio === '2') {
-                    alert('Opção 2 escolhida');
-                } else if (valueRadio === '3') {
-                    alert('Opção 3 escolhida');
-                }
-            } else {
-                alert('Favor, selecionar ao menos uma opção...');
-            };
         });
-        
-       
+
+
 
 
 
