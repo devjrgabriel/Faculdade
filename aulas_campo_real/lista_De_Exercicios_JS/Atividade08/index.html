@@ -90,28 +90,34 @@
             exiba "Opção inválida".</h3>
 
         <form id="meuformulario" class="d-flex flex-column align-items-center " style=" width: 70%;">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero1">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero2">
+            <div>
+                <input type="radio" class="radioStyle" name="option" value="1"> Opção 1<br>
+                <input type="radio" name="option" value="2"> Opção 2<br>
+                <input type="radio" name="option" value="3"> Opção 3<br>
+            </div>
             <button class="botaoenviar" type="submit">Calcular</button>
         </form>
+        <h6>Obs: Aprender estilizar esses trem</h6>
     </section>
     <script>
-        let verificacao;
         const formulario = document.getElementById('meuformulario');
         formulario.addEventListener('submit', function (evento) {
             evento.preventDefault();
 
-            let numero1 = document.getElementById('numero1').value;
-            let numero2 = document.getElementById('numero2').value;
-
-            if (numero1 == numero2){
-                alert('os numeros são iguais')
-            }else if (numero1 > numero2) {
-                alert('Primeiro numero é maior');
+            let radioSelecionado = document.querySelector('input[name="option"]:checked');
+            if (radioSelecionado) {
+                let valueRadio = radioSelecionado.value;
+                if (valueRadio === '1') {
+                    alert('Opção 1 escolhida');
+                } else if (valueRadio === '2') {
+                    alert('Opção 2 escolhida');
+                } else if (valueRadio === '3') {
+                    alert('Opção 3 escolhida');
+                }
             } else {
-                alert('Segundo numero é maior');
-            }
-        })
+                alert('Favor, selecionar ao menos uma opção...');
+            };
+        });
     </script>
 
 </body>
