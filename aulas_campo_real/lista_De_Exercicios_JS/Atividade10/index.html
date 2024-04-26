@@ -89,25 +89,29 @@
         </form>
     </section>
     <script>
-        let matriz=[
-        [1,2,3],
-        [3,2,1]
+        let matriz = [
+            [1, 2, 3],
+            [3, 2, 1]
         ];
 
         const formulario = document.getElementById('meuformulario');
         formulario.addEventListener('submit', function (evento) {
             evento.preventDefault();
 
-            let somaDosNumeros =  0;
+            let somaDosNumeros = 0;
+            let contador = 0;
+            let media = 0;
 
             for (let i = 0; i < matriz.length; i++) {
-                for (let x=0; x<matriz[i].length;x++ ){
+                for (let x = 0; x < matriz[i].length; x++) {
                     somaDosNumeros += matriz[i][x];
+                    contador += 1;
                 }
             }
-            alert('A soma é ' + somaDosNumeros);
+            media = somaDosNumeros/contador;
+            alert('A media é ' + media);
         })
-    
+
     </script>
 
 </body>
