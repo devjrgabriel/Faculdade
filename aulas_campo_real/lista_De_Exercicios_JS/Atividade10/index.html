@@ -85,28 +85,33 @@
             elementos de uma matriz.</h3>
 
         <form id="meuformulario" class="d-flex flex-column align-items-center " style=" width: 70%;">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero1">
-            <input class="campoNumero" type="number" name="" placeholder="Digite um numero..." id="numero2">
             <button class="botaoenviar" type="submit">Calcular</button>
         </form>
     </section>
     <script>
-        let verificacao;
+        let matriz = [
+            [1, 2, 3],
+            [3, 2, 1]
+        ];
+
         const formulario = document.getElementById('meuformulario');
         formulario.addEventListener('submit', function (evento) {
             evento.preventDefault();
 
-            let numero1 = document.getElementById('numero1').value;
-            let numero2 = document.getElementById('numero2').value;
+            let somaDosNumeros = 0;
+            let contador = 0;
+            let media = 0;
 
-            if (numero1 == numero2){
-                alert('os numeros são iguais')
-            }else if (numero1 > numero2) {
-                alert('Primeiro numero é maior');
-            } else {
-                alert('Segundo numero é maior');
+            for (let i = 0; i < matriz.length; i++) {
+                for (let x = 0; x < matriz[i].length; x++) {
+                    somaDosNumeros += matriz[i][x];
+                    contador += 1;
+                }
             }
+            media = somaDosNumeros/contador;
+            alert('A media é ' + media);
         })
+
     </script>
 
 </body>
