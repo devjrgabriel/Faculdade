@@ -23,7 +23,7 @@ function login() {
     // Verificar se os dados inseridos correspondem aos dados armazenados
     if (username === storedUsername && password === storedPassword) {
         alert('Login bem-sucedido!'); // Exibe uma mensagem de sucesso se o login for bem-sucedido
-        window.location.href = "../blog/pagina1.html"; // Redireciona para a página principal após o login bem-sucedido
+        window.location.href = "../blog/html/publicacoes.html"; // Redireciona para a página principal após o login bem-sucedido
         return false; // Impede o envio do formulário
     } else {
         alert('Usuário ou senha incorretos!'); // Exibe uma mensagem de erro se o login falhar
