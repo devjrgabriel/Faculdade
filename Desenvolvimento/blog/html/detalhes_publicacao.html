@@ -5,158 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da Publicação</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f3f8;
-            /* Cor de fundo */
-            color: #333;
-            /* Cor do texto */
-        }
+    <link rel="stylesheet" href="../style/detalhes_publicacao.css">
 
-        .dark-mode {
-            background-color: #333;
-            /* Fundo escuro */
-        }
-
-        .color-blind-mode {
-            background-color: #f2f2f2;
-            /* Fundo para daltonismo */
-        }
-
-        nav {
-            background-color: #2ecc71;
-            /* Verde esmeralda */
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            animation: fadeInDown 1s ease-in-out;
-        }
-
-        .dark-mode nav {
-            background-color: #111;
-            /* Navbar em modo escuro */
-        }
-
-        .color-blind-mode nav {
-            background-color: #777;
-            /* Navbar em modo daltonismo */
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 5px;
-            transition: color 0.3s ease-in-out;
-            cursor: pointer;
-            position: relative;
-            /* Para posicionar o contorno */
-        }
-
-        nav a:hover {
-            color: #27ae60;
-            /* Verde folha */
-        }
-
-        nav a.dark-mode-active::after,
-        nav a.color-blind-mode-active::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            /* Distância da borda de baixo */
-            width: 100%;
-            height: 2px;
-            background-color: #27ae60;
-            /* Cor do contorno */
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            /* Cor de fundo do contêiner */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* Sombra */
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        .voltar {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #3d9970;
-            /* Cor do link */
-            transition: color 0.3s;
-        }
-
-        .voltar:hover {
-            color: #267350;
-            /* Cor do link ao passar o mouse */
-        }
-
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 0.5s ease;
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
     <nav>
-        <a href="pagina1.html">Publicações</a>
-        <a href="pagina2.html">Nova Publicação</a>
+        <a href="publicacoes.html">Publicações</a>
+        <a href="publicar.html">Nova Publicação</a>
         <a href="#" id="toggleDarkMode">Modo Escuro</a>
         <a href="#" id="toggleColorBlindMode">Modo Daltonismo</a>
         <a href="#" id="increaseFontSize">Aumentar Fonte</a>
@@ -165,70 +21,12 @@
     <div class="container">
         <h1>Título da Publicação</h1>
         <p>Descrição da Publicação</p>
-        <img src="imagem_publicacao.jpg" alt="Imagem da Publicação">
+        <img src="../image/imagem_publicacao.jpg" alt="Imagem da Publicação">
         <a href="javascript:history.back()" class="voltar">Voltar</a>
     </div>
     <div class="popup" id="popup"></div>
 
 </body>
-<script>
 
-    // Função para exibir um pop-up com uma mensagem
-    function showPopup(message, activated) {
-        const popup = document.getElementById('popup');
-        popup.textContent = message;
-        popup.style.display = 'block';
-        setTimeout(() => {
-            popup.style.display = 'none';
-        }, 3000); // Remove o pop-up após 3 segundos
-    }
-
-    // Seleção dos elementos do HTML que serão manipulados
-    const toggleDarkModeLink = document.getElementById("toggleDarkMode");
-    const toggleColorBlindModeLink = document.getElementById("toggleColorBlindMode");
-    const increaseFontSizeLink = document.getElementById("increaseFontSize");
-    const decreaseFontSizeLink = document.getElementById("decreaseFontSize");
-    const body = document.body;
-
-    // Event listener para o botão "Modo Escuro"
-    toggleDarkModeLink.addEventListener("click", function () {
-        // Alternar a classe 'dark-mode' no elemento body
-        body.classList.toggle("dark-mode");
-        // Alternar a classe 'dark-mode-active' no botão 'Modo Escuro'
-        toggleDarkModeLink.classList.toggle("dark-mode-active");
-        // Exibir pop-up informando o estado atual do modo escuro
-        showPopup(body.classList.contains("dark-mode") ? "Modo Escuro ativado" : "Modo Escuro desativado", body.classList.contains("dark-mode"));
-    });
-
-    // Event listener para o botão "Modo Daltonismo"
-    toggleColorBlindModeLink.addEventListener("click", function () {
-        // Alternar a classe 'color-blind-mode' no elemento body
-        body.classList.toggle("color-blind-mode");
-        // Alternar a classe 'color-blind-mode-active' no botão 'Modo Daltonismo'
-        toggleColorBlindModeLink.classList.toggle("color-blind-mode-active");
-        // Exibir pop-up informando o estado atual do modo daltonismo
-        showPopup(body.classList.contains("color-blind-mode") ? "Modo Daltonismo ativado" : "Modo Daltonismo desativado", body.classList.contains("color-blind-mode"));
-    });
-
-    // Event listener para o botão "Aumentar Fonte"
-    increaseFontSizeLink.addEventListener("click", function () {
-        // Obter o tamanho atual da fonte
-        const currentFontSize = parseFloat(window.getComputedStyle(document.body, null).getPropertyValue('font-size'));
-        // Aumentar o tamanho da fonte em 1 pixel
-        document.body.style.fontSize = (currentFontSize + 1) + 'px';
-        // Exibir pop-up informando que a fonte foi aumentada
-        showPopup("Fonte aumentada", true);
-    });
-
-    // Event listener para o botão "Diminuir Fonte"
-    decreaseFontSizeLink.addEventListener("click", function () {
-        // Obter o tamanho atual da fonte
-        const currentFontSize = parseFloat(window.getComputedStyle(document.body, null).getPropertyValue('font-size'));
-        // Diminuir o tamanho da fonte em 1 pixel
-        document.body.style.fontSize = (currentFontSize - 1) + 'px';
-        // Exibir pop-up informando que a fonte foi diminuída
-        showPopup("Fonte diminuída", true);
-    });
-</script>
 
 </html>
