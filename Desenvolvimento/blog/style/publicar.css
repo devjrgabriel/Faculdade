@@ -20,7 +20,8 @@ nav {
     background-color: #2ecc71;
     /* Verde esmeralda */
     color: #fff;
-    padding: 10px;
+    padding: 1rem;
+    /* Alterado para 1rem */
     text-align: center;
     animation: fadeInDown 1s ease-in-out;
 }
@@ -38,8 +39,10 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px;
+    margin: 0 1rem;
+    /* Alterado para 1rem */
+    padding: 0.625rem;
+    /* Alterado para 0.625rem */
     transition: color 0.3s ease-in-out;
     cursor: pointer;
     position: relative;
@@ -56,7 +59,7 @@ nav a.color-blind-mode-active::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -0.125em;
     /* Distância da borda de baixo */
     width: 100%;
     height: 2px;
@@ -65,16 +68,21 @@ nav a.color-blind-mode-active::after {
 }
 
 .conteudo {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 3rem;
+    /* Alterado para 3rem */
+    padding: 2rem;
+    /* Alterado para 2rem */
 }
 
 .form-container {
     background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    border-radius: 1rem;
+    /* Alterado para 1rem */
+    padding: 2rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+    /* Alterado para 1rem */
+    max-width: 60%;
+    /* Alterado para 90% */
     margin: 0 auto;
     animation: fadeIn 1s ease;
 }
@@ -92,7 +100,8 @@ nav a.color-blind-mode-active::after {
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-2rem);
+        /* Alterado para -2rem */
     }
 
     to {
@@ -103,28 +112,31 @@ nav a.color-blind-mode-active::after {
 
 .popup {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    /* Alterado para 2rem */
+    right: 2rem;
+    /* Alterado para 2rem */
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
+    /* Alterado para 1rem e 2rem */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.3);
+    /* Alterado para 0.625rem */
     animation: fadeIn 0.5s ease;
     display: none;
-
 }
 
 .form-container h1 {
     color: #6ab04c;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    /* Alterado para 2rem */
 }
 
 .form-container label {
     color: #46873d;
     display: block;
-    margin-bottom: 5px;
-    margin: 0 auto;
+    margin-bottom: 0.3125rem;
 }
 
 .form-container input[type="text"],
@@ -132,9 +144,12 @@ nav a.color-blind-mode-active::after {
 .form-container input[type="file"] {
     width: 90%;
     margin-left: 5%;
-    margin-top: 2%;
-    padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    /* Alterado para 1rem */
+    padding: 0.625rem;
+    /* Alterado para 0.625rem */
+    margin-bottom: 2rem;
+    /* Alterado para 2rem */
     border-radius: 5px;
     border: 1px solid #46873d;
     transition: border-color 0.3s;
@@ -150,12 +165,14 @@ nav a.color-blind-mode-active::after {
 .form-container button {
     background: #3d9970;
     color: #f2f2f2;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+    /* Alterado para 0.625rem e 1.25rem */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-right: 10px;
+    margin-right: 1rem;
+    /* Alterado para 1rem */
 }
 
 .form-container button:hover {
