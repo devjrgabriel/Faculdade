@@ -1,0 +1,28 @@
+
+Solicitar quitação de mensalidade
+Selecionar quitar mensalidades
+Quitação de mensalidades solicitada
+Solicitar cartão do sócio
+Fornecer cartão
+Informar número do cartão
+Número do cartão informado
+Consultar sócio: consultar Socio()
+
+
+Consultar mensalidades
+Devolve mensalidades
+
+Apresentar mensalidades
+
+
+Selecionar mensalidades a pagar
+Quitar mensalidades
+Quitação solicitada
+
+
+loop
+[Para cada mensalidade]
+quitarMensalidade()
+verdadeiro: int
+
+Emitir recibo de quitação de mensalidades
