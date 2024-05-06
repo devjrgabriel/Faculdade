@@ -8,7 +8,7 @@ function mostrarPublicacoes() {
     // Verifica se há publicações salvas
     if (publicacoesSalvas.length === 0) {
         // Se não houver publicações, exibe uma mensagem indicando que não há publicações disponíveis
-        conteudoDiv.innerHTML = "<p class='no-posts'>Nenhuma publicação disponível.</p>";
+        conteudoDiv.innerHTML = "<h3 class='no-posts'>Nenhuma publicação disponível.</h3>";
     } else {
         // Se houver publicações salvas, limpa o conteúdo atual da div
         conteudoDiv.innerHTML = ""; // Limpa o conteúdo atual
