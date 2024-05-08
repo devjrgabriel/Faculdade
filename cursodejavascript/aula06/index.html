@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="calculadora">
+                    <input type="text" name="resultado" id="resultado" class="form-control resultado" placeholder="0"
+                        disabled="disabled">
+                    <div class="row d-flex ">
+                        <button onclick="calcular('operacao','c')" type="button" class="btn btn-lg clear font-weight-light">C</button>
+                        <button onclick="calcular('operacao','/')" type="button" class="btn btn-lg font-weight-light">/</button>
+                        <button onclick="calcular('operacao','*')" type="button" class="btn btn-lg font-weight-light">X</button>
+                    </div>
+                    <div class="row d-flex ">
+                        <button onclick="calcular('numero','7')" type="button" class="btn btn-lg font-weight-light">7</button>
+                        <button onclick="calcular('numero','8')" type="button" class="btn btn-lg font-weight-light">8</button>
+                        <button onclick="calcular('numero','9')" type="button" class="btn btn-lg font-weight-light">9</button>
+                        <button onclick="calcular('operacao','-')" type="button" class="btn btn-lg font-weight-light">-</button>
+                    </div>
+                    <div class="row d-flex ">
+                        <button onclick="calcular('numero','4')" type="button" class="btn btn-lg font-weight-light">4</button>
+                        <button onclick="calcular('numero','5')" type="button" class="btn btn-lg font-weight-light">5</button>
+                        <button onclick="calcular('numero','6')" type="button" class="btn btn-lg font-weight-light">6</button>
+                        <button onclick="calcular('operacao','+')" type="button" class="btn btn-lg font-weight-light">+</button>
+                    </div>
+                    <div class="row d-flex">
+                        <button onclick="calcular('numero','1')" type="button" class="btn btn-lg font-weight-light">1</button>
+                        <button onclick="calcular('numero','2')" type="button" class="btn btn-lg font-weight-light">2</button>
+                        <button onclick="calcular('numero','3')" type="button" class="btn btn-lg font-weight-light">3</button>
+                        <button onclick="calcular('operacao','=')" type="button" class="btn btn-lg font-weight-light enter">=</button>
+                    </div>
+                    <div class="row d-flex" style="margin-top: -3.7rem;">
+                        <button onclick="calcular('numero','0')" type="button" class="btn btn-lg font-weight-light zero">0</button>
+                        <button onclick="calcular('operacao','.')" type="button" class="btn btn-lg font-weight-light">.</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function calcular(tipo, valor) {
+        if (tipo === 'operacao') {
+            if (valor === 'c') {
+                document.getElementById('resultado').value = ''
+            }
+            if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
+                document.getElementById('resultado').value += valor;
+            }
+            if (valor === '=') {
+                let resultado = eval(document.getElementById('resultado').value);
+                document.getElementById('resultado').value = resultado;
+            }
+
+        } else if (tipo === 'numero') {
+            document.getElementById('resultado').value += valor;
+
+        }
+
+
+
+    }
+</script>
+
+</html>
