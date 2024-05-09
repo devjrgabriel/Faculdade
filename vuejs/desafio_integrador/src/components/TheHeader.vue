@@ -1,6 +1,6 @@
 <template>
-    <header>
-        headaer
+    <header class="header">
+        Cabecalho
     </header>
 </template>
 <script>
@@ -14,5 +14,10 @@
 </script>
 
 <style>
-    .header {}
+    .header {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
 </style>
