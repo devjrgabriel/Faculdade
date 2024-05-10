@@ -40,20 +40,9 @@ CREATE TABLE cliente (
  
 describe contemitem;    
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+insert into cliente values ( '12345','Gabriel','rua um');
 
+insert into cliente (cpfcliente,nome,endereco) values ( '45678','Maria','rua dois');
+
+select * from cliente;
+select * from cliente where cpfcliente = '12345' or nome = 'g' ;
