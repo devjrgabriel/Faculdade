@@ -1,15 +1,14 @@
 <template>
-  <bindclass />
+    <vfor />
 </template>
-
-
 <script>
-import { bindclass } from "./components/bindclass.vue";
+import vfor from "./components/v-for.vue";
 
 export default {
-  name: 'App',
-  components: {
-    bindclass
-  }
+    name: 'App',
+    components: {
+        vfor
+    }
 }
+
 </script>

@@ -1,5 +1,23 @@
+<!-- <template>
+    <vfor />
+</template>
+<script>
+import vfor from "./components/v-for.vue";
+
+export default {
+    name: 'App',
+    components: {
+        vfor
+    }
+}
+
+</script>
+ -->
+
 <template>
     <div>
+        <h1 :class="{ 'title': true }">Aqui é estilização com bind</h1>
+        <h1 :class="{ 'title': true, 'titlehome': ishome }">Aqui é estilização com bind</h1>
         <div v-for="(obj, index) in todos" v-bind:key="obj.id" class="v-for">
             <img :src="obj.imglink" alt="" v-if="obj.imglink" srcset="">
             {{ index }} - {{ obj.title }}
@@ -52,7 +70,9 @@ export default {
                     "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
                     "completed": false
                 }
-            ]
+            ],
+            ishome: true
+
         }
     }
 
@@ -62,6 +82,15 @@ export default {
 </script>
 
 <style>
+.title {
+    background-color: red
+}
+
+.titlehome {
+    color: white;
+    background-color: green;
+}
+
 .v-for {
     background-color: black;
     color: white;
