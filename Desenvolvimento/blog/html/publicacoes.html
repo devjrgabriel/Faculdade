@@ -6,17 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicações</title>
     <link rel="stylesheet" href="../style/publicacoes.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <nav>
-        <a href="publicacoes.html">Publicações</a>
-        <a href="publicar.html">Nova Publicação</a>
-        <a href="#" id="toggleDarkMode">Modo Escuro</a>
-        <a href="#" id="toggleColorBlindMode">Modo Daltonismo</a>
-        <a href="#" id="increaseFontSize">Aumentar Fonte</a>
-        <a href="#" id="decreaseFontSize">Diminuir Fonte</a>
-        <a href="/login/login.html">Login</a>
+    <nav class="navbar navbar-expand-md">
+        <div class="containerNavbar d-flex  align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <img src="/site/images/LogoRow.png" class="imageNavbar" alt="">Logo
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div id="nav-principal" class="collapse navbar-collapse navbarItems">
+                <ul class="navbar-nav ml-auto ulNavbar">
+                    <li class="nav-item">
+                        <a href="publicacoes.html" class="nav-link">Publicações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publicar.html" class="nav-link">Nova Publicação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="toggleDarkMode" class="nav-link">Modo Escuro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="toggleColorBlindMode" class="nav-link">Modo Daltonismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="increaseFontSize" class="nav-link">Aumentar Fonte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="decreaseFontSize" class="nav-link">Diminuir Fonte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login/login.html" class="nav-link">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="conteudo" id="conteudo">
