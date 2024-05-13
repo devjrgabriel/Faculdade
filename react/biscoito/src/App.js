@@ -40,3 +40,5 @@ class Botao extends Component {
     );
   }
 }
+
+export default App;
