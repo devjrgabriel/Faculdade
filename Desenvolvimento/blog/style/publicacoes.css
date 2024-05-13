@@ -1,33 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #eaf4e1;
-    /* Verde claro */
-    overflow-x: hidden;
 }
 
-.dark-mode {
+body {
+    overflow-x: hidden;
+    font-family: "Inter";
+}
+
+/*Framework Pessoal: Abaixo*/
+/*Framework Pessoal: Acima*/
+
+
+
+/*Navbar abaixo: Estilização*/
+nav {
+    animation: fadeInDown 1s ease-in-out;
+
+}
+
+.containerNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.ulNavbar {
+    gap: 5px;
+}
+
+.ClassDivFonte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.1rem;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #27ae60;
+}
+
+/*Navbar acima: Estilização*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modoEscuroClass {
     background-color: #333;
-    /* Fundo escuro */
 }
 
 .color-blind-mode {
     background-color: #f2f2f2;
-    /* Fundo para daltonismo */
 }
 
-nav {
-    background-color: #2ecc71;
-    /* Verde esmeralda */
-    color: #fff;
-    padding: 1%;
-    /* Alterado para 1% */
-    text-align: center;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-.dark-mode nav {
+.modoEscuroClass nav {
     background-color: #111;
     /* Navbar em modo escuro */
 }
@@ -37,36 +87,19 @@ nav {
     /* Navbar em modo daltonismo */
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1%;
-    /* Alterado para 1% */
-    padding: 0.5%;
-    /* Alterado para 0.5% */
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
-    position: relative;
-    /* Para posicionar o contorno */
-}
 
-nav a:hover {
-    color: #27ae60;
-    /* Verde folha */
-}
 
-nav a.dark-mode-active::after,
-nav a.color-blind-mode-active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.125em;
-    /* Distância da borda de baixo */
-    width: 100%;
-    height: 0.125em;
-    background-color: #27ae60;
-    /* Cor do contorno */
-}
+
+
+
+
+
+
+
+
+
+
+
 
 .conteudo {
     margin-top: 5%;

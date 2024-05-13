@@ -38,16 +38,16 @@ function showPopup(message, activated) {
     }, 3000);
 }
 
-const toggleDarkModeLink = document.getElementById("toggleDarkMode");
+const ModoEscuroLink = document.getElementById("ModoEscuro");
 const toggleColorBlindModeLink = document.getElementById("toggleColorBlindMode");
 const increaseFontSizeLink = document.getElementById("increaseFontSize");
 const decreaseFontSizeLink = document.getElementById("decreaseFontSize");
 const body = document.body;
 
-toggleDarkModeLink.addEventListener("click", function () {
-    body.classList.toggle("dark-mode");
-    toggleDarkModeLink.classList.toggle("dark-mode-active");
-    showPopup(body.classList.contains("dark-mode") ? "Modo Escuro ativado" : "Modo Escuro desativado", body.classList.contains("dark-mode"));
+ModoEscuroLink.addEventListener("click", function () {
+    body.classList.toggle("modoEscuroClass");
+    ModoEscuroLink.classList.toggle("modoEscuroClass-active");
+    showPopup(body.classList.contains("modoEscuroClass") ? "Modo Escuro ativado" : "Modo Escuro desativado", body.classList.contains("modoEscuroClass"));
 });
 
 toggleColorBlindModeLink.addEventListener("click", function () {
