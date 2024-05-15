@@ -1,3 +1,4 @@
 body {
-    background-color: #042591;
+    background: linear-gradient(50deg, #112f2b, #2d867a, #2d867a);
+    background-size: 200% 200%;
 }
