@@ -1,8 +1,12 @@
-DROP DATABASE aula03;
-
+/* Criação base de dados*/
 create database aula03;
+
+/*Destruir o banco de dados*/
+DROP DATABASE aula03;
+/*Utilizar o banco de dados*/
 use aula03;
 
+/*Criação de banco de dados*/
 CREATE TABLE Produto (
     codProduto int PRIMARY KEY UNIQUE,
     codFornecedor int,
@@ -11,38 +15,13 @@ CREATE TABLE Produto (
     FOREIGN KEY (codFornecedor) REFERENCES fornecedor (codFornecedor)
 );
 
-CREATE TABLE fornecedor (
-    codFornecedor int PRIMARY KEY UNIQUE,
-    nomeFornecedor CHAR(45)
-);
+/*Descrever a estrutura da tabela*/
+describe Produto;    
 
-CREATE TABLE contemItem (
-    codProduto int PRIMARY KEY UNIQUE,
-    numeronf int,
-    quantidade float,
-    precoUnitario real,
-    FOREIGN KEY (numeronf) REFERENCES notaFiscal (numNotaFiscal)
-);
-
-CREATE TABLE notaFiscal (
-    numNotaFiscal int PRIMARY KEY UNIQUE,
-    codCliente int,
-    Data date,
-    total int,
-    FOREIGN KEY (codCliente) REFERENCES cliente (codCliente)  
-);
-
-CREATE TABLE cliente (
-    codCliente int PRIMARY KEY UNIQUE,
-    nomeCliente CHAR(45),
-    endereco CHAR(45)
-);
- 
-describe contemitem;    
-    
+/*Inserir os dados*/
 insert into cliente values ( '12345','Gabriel','rua um');
-
 insert into cliente (cpfcliente,nome,endereco) values ( '45678','Maria','rua dois');
 
+/*Selecionar uma tabela*/
 select * from cliente;
 select * from cliente where cpfcliente = '12345' or nome = 'g' ;
