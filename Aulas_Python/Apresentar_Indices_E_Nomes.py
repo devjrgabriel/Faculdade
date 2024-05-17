@@ -11,6 +11,6 @@ while index < len(name):
     new_name += f'*{letter}'
     # controle do while para alterar o indice
     index += 1
-# novo nome recebe * para fechar a*b*c'*'<- este ultimo *
+# novo nome recebe * para fechar a*b*c'*'<- este ultimo teste *
 new_name += '*'
 print(new_name)
