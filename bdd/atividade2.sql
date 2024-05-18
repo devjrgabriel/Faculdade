@@ -40,6 +40,11 @@ select nome,vencimento,valor from duplicata;
 select* from duplicata where banco = 'Itau';
 
 /*Exercicio 03 */
+select count(banco) from duplicata where banco like 'Itau';
+/*Exercicio 04 */
 select numero,vencimento,valor,nome from duplicata where vencimento like '2023%'
 
+/*Exercicio 05 ?? */
+ select numero,vencimento,valor,nome from duplicata where banco not like'Itau' and not like 'Santander';
 
+/*Exercicio 06*/
