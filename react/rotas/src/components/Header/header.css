@@ -1,0 +1,25 @@
+*{
+    text-decoration: none;
+}
+
+.Navbar-js{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    margin-top: 1rem;
+    width: 60%;
+    height: 3rem;
+    border-radius: 1rem;
+}
+.image{
+    width: 5rem;
+    height: 5rem;
+}
+.navbarlist{
+    width: 50%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
