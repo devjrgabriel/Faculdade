@@ -35,3 +35,9 @@ body{
     font-weight: bold;
     letter-spacing: 0.15rem;
 }
+.Navitem:hover{
+    transition: all 0.6s;
+    transform: scale3d(1.2, 1.2, 1);
+    text-shadow: 0 0 0.2rem #093828;
+
+}
