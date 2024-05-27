@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 
 function App(){
   const [tarefas, setTarefas] = useState([]);
 
   const [input, setInput] = useState('');
+  
+  const[numero, setNumero] = useState(0);
 
   useEffect(() =>{
     const tarefasStorage = localStorage.getItem('tarefas');
