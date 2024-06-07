@@ -45,28 +45,78 @@ select numero,vencimento,valor,nome from duplicata where vencimento like '2023%'
 depositadas nos bancos Itaú e Santander.*/
  select numero,vencimento,valor,nome from duplicata where banco not like'Itau' and not like 'Santander';
 /*6. Quanto é o valor da divida o cliente PAPELARIA SILVA, e quais são as duplicatas?*/
+SELECT SUM(valor) AS valor_total, numero, nome, vencimento, banco
+FROM duplicata
+WHERE nome = 'PAPELARIA SILVA'
+GROUP BY numero, nome, vencimento, banco;
+
 /*7. Retirar da tabela a duplicata 770710 do cliente LIVRARIA FERNANDES, por ter
 sido devidamente quitada.*/
+DELETE FROM duplicata
+WHERE numero = '770710';
+
 /*8. Apresentar uma listagem em ordem alfabética por nome do cliente de todos os
 campos da tabela.*/
+SELECT * FROM duplicata
+ORDER BY nome;
+
 /*9. Apresentar uma listagem em ordem de data de vencimento com o nome do cliente,
 banco, valor e vencimento.*/
+SELECT nome, banco, valor, vencimento
+FROM duplicata
+ORDER BY vencimento;
+
 /*10.As duplicatas do Banco do Brasil foram transferidas para o Santander. Proceder o
 ajuste dos registros.
 */
+UPDATE duplicata
+SET banco = 'Santander'
+WHERE banco = 'Banco do Brasil';
 /*11.Quais são os clientes que possuem suas duplicatas depositadas no Banco
 Bradesco?*/
+SELECT DISTINCT nome
+FROM duplicata
+WHERE banco = 'Bradesco';
+
 /*12.Qual é a previsão de recebimento no período de 01/01/2022 até 31/12/2022?*/
+SELECT SUM(valor) AS valor_total, vencimento
+FROM duplicata
+WHERE vencimento BETWEEN '2022-01-01' AND '2022-12-31'
+GROUP BY vencimento;
 /*13.Quanto a empresa tem para receber no período de 01/08/2022 até 30/08/2022?*/
+SELECT SUM(valor) AS valor_total
+FROM duplicata
+WHERE vencimento BETWEEN '2022-08-01' AND '2022-08-30';
 /*14.Quais foram os itens adquiridos pelo cliente ABC PAPELARIA?*/
+SELECT nome
+FROM duplicata
+WHERE nome = 'ABC PAPELARIA';
 /*15.Acrescentar uma multa de 15% para todos os títulos que se encontram vencidos no
 período de 01/01/2022 até*/
+UPDATE duplicata
+SET valor = valor * 1.15
+WHERE vencimento BETWEEN '2022-01-01' AND '2022-12-31' AND valor > 0;
 /*16.Acrescentar uma multa de 5% para todos os títulos vencidos entre 01/01/2023 e
 31/05/2023 que sejam do cliente LER E*/
+UPDATE duplicata
+SET valor = valor * 1.05
+WHERE nome = 'LER E SABER' AND vencimento BETWEEN '2023-01-01' AND '2023-05-31' AND valor > 0;
 /*17.Qual é a média aritmética dos valores das duplicatas do ano de 2022?*/
+SELECT AVG(valor) AS media_valor
+FROM duplicata
+WHERE YEAR(vencimento) = 2022;
 /*18.Exiba as duplicatas e nome dos respectivos clientes que possuem duplicatas com
 valor superior a 10000,00?*/
+SELECT numero, nome, valor, vencimento, banco
+FROM duplicata
+WHERE valor > 10000.00;
 /*19.Qual o valor total das duplicatas lançadas para o banco Santander?*/
+SELECT SUM(valor) AS valor_total
+FROM duplicata
+WHERE banco = 'Santander';
 /*20.Quais são os clientes que possuem suas duplicatas depositadas nos Bancos
 Bradesco ou Itaú?*/
+SELECT DISTINCT nome
+FROM duplicata
+WHERE banco IN ('Bradesco', 'Itaú');
 
